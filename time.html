@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現在時間</title>
+</head>
+<script>
+    function ShowTime(){
+        // 抓取showbox的Id後讓它在網頁上顯示現在的時間,並讓時間每秒更新
+    document.getElementById('showbox').innerHTML = new Date();
+    setTimeout('ShowTime()',1000);
+    }
+</script>
+<body onload="ShowTime()">
+    <div id="showbox">現在時間</div>
+    <div id="ShowTime"></div>
+</body>
+</html>
